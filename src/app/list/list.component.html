@@ -1,0 +1,7 @@
+<h1>Version overview</h1>
+
+<ul>
+  <li *ngFor="let item of versionList | async">
+    <a [routerLink]="[item.version, 'details']">{{ item.version }}</a>
+  </li>
+</ul>
